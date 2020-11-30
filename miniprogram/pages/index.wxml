@@ -1,0 +1,5 @@
+<view class="page" data-weui-theme="{{theme}}">
+  <view class="page__hd" style="text-align: center;">
+
+  </view>
+</view>

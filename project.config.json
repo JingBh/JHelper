@@ -18,7 +18,7 @@
     "checkInvalidKey": true,
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
-    "compileHotReLoad": true,
+    "compileHotReLoad": false,
     "useMultiFrameRuntime": false,
     "useApiHook": true,
     "babelSetting": {
@@ -38,7 +38,7 @@
   },
   "appid": "wx4fcbc08aeac744c4",
   "projectname": "JHelper",
-  "libVersion": "2.9.3",
+  "libVersion": "2.11.3",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {

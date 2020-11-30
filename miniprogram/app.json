@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index"
+  ],
+  "sitemapLocation": "sitemap.json",
+  "window": {
+    "navigationBarTitleText": "JHelper",
+    "navigationBarTextStyle": "@navFgStyle",
+    "navigationBarBackgroundColor": "@bgColor",
+    "backgroundColor": "@bgColor",
+    "backgroundTextStyle": "@fgStyle"
+  },
+  "style": "v2",
+  "useExtendedLib": {
+    "weui": true
+  },
+  "darkmode": true,
+  "themeLocation": "theme.json"
+}
