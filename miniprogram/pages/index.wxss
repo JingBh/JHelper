@@ -1,1 +1,17 @@
-/* pages/index.wxss */
+.page__hd view {
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  margin: auto auto 1rem;
+  background-color: var(--weui-BG-1);
+  border: 2px solid var(--weui-FG-3);
+  border-radius: 50%;
+}
+
+.weui-cells {
+  background: var(--weui-BG-0);
+}

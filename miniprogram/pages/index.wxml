@@ -1,5 +1,33 @@
-<view class="page" data-weui-theme="{{theme}}">
+<view class="page" data-weui-theme="{{ theme }}">
   <view class="page__hd" style="text-align: center;">
-
+    <image class="logo" src="../images/logo.png"/>
+    <view class="page__title">JHelper</view>
+    <view class="page__desc">JingBh の 微信小程序试验场</view>
+  </view>
+  <view class="page__bd page__bd_spacing">
+    <view class="weui-article__h2">这里有什么：</view>
+    <mp-cells>
+      <mp-cell>
+        <view class="weui-media-box__title">个人主页</view>
+        <view class="weui-media-box__desc">
+          // TODO: 用小程序写个个人主页？
+        </view>
+      </mp-cell>
+      <mp-cell link hover url="wall/index">
+        <view class="weui-media-box__title">表白墙</view>
+        <view class="weui-media-box__desc">
+          没人觉得用朋友圈做太 nt 了吗...
+        </view>
+      </mp-cell>
+    </mp-cells>
+  </view>
+  <view class="page__ft">
+    <view class="weui-footer">
+      <view class="weui-footer_fixed-bottom">
+        <view class="weui-footer__text">
+          By @JingBh 2020
+        </view>
+      </view>
+    </view>
   </view>
 </view>
