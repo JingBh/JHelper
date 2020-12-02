@@ -1,0 +1,14 @@
+<view class="page" data-weui-theme="{{ theme }}">
+  <wall-page wx:if="{{ navActive === 'wall' }}"/>
+  <post-page wx:elif="{{ navActive === 'post' }}" bindback="navBack"/>
+  <view class="weui-tabbar">
+    <button wx:for="{{ navItems }}" wx:key="id"
+            class="{{ 'weui-tabbar__item' + (navActive === item.id ? ' weui-tabbar__item_on' : '') }}"
+            data-id="{{ item.id }}" bindtap="onNav">
+      <mp-icon extClass="weui-tabbar__icon" icon="{{ item.icon }}" size="{{ 28 }}"
+               color="{{ navActive === item.id ? 'var(--weui-BRAND)' : 'var(--weui-FG-0)'}}"
+               type="{{ navActive === item.id ? 'field' : 'outline' }}"/>
+      <view class="weui-tabbar__label">{{ item.text }}</view>
+    </button>
+  </view>
+</view>

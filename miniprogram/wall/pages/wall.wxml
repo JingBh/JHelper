@@ -1,0 +1,22 @@
+<block>
+  <!--<mp-toptips show="{{ !idLoading && !canPost }}" type="error"
+              msg="请求服务器失败，暂时无法发送新内容" />
+  <mp-loading wx:if="{{ idLoading }}" type="circle"
+              tips="正在检查用户 OpenID..." />
+  <view wx:wx:elif="{{ canPost }}">
+    <mp-cells title="我要写一条：">
+      <mp-cell>
+        <textarea class="weui-textarea" placeholder="请输入你的表白~"
+                  rows="3" bindinput="onInput" />
+        <view class="weui-textarea-counter">
+          <text>{{ textCount }}</text>/200
+        </view>
+      </mp-cell>
+    </mp-cells>
+    <label class="weui-agree">
+      <checkbox class="weui-agree__checkbox-check" />
+      <span class="weui-agree__checkbox"></span>
+      <span class="weui-agree__text">匿名发布</span>
+    </label>
+  </view>-->
+</block>

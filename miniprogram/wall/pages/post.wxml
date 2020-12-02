@@ -1,0 +1,26 @@
+<block>
+  <view wx:if="{{ loaded && !error }}" class="weui-form">
+    <view class="weui-form__control-area">
+      <mp-cells title="我要写一条：">
+        <mp-cell>
+          <textarea class="weui-textarea" placeholder="请输入你的表白~" rows="3" bindinput="onInput"/>
+          <view class="weui-textarea-counter">
+            <text>{{ textCount }}</text>/200
+          </view>
+          <label class="weui-agree">
+            <checkbox class="weui-agree__checkbox-check"/>
+            <text class="weui-agree__checkbox"></text>
+            <text class="weui-agree__text">匿名发布</text>
+          </label>
+        </mp-cell>
+      </mp-cells>
+    </view>
+    <view class="weui-form__opr-area">
+      <button class="weui-btn weui-btn_primary">提交</button>
+    </view>
+  </view>
+  <mp-dialog show="{{ error }}" title="错误" buttons="{{ dialogButtons }}"
+             bindclose="back" bindbuttontap="back">
+    <text>{{ errorText }}</text>
+  </mp-dialog>
+</block>

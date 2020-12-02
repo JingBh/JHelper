@@ -10,7 +10,7 @@
     "minified": true,
     "newFeature": true,
     "coverView": true,
-    "nodeModules": false,
+    "nodeModules": true,
     "autoAudits": false,
     "showShadowRootInWxmlPanel": true,
     "scopeDataCheck": false,
@@ -38,7 +38,7 @@
   },
   "appid": "wx4fcbc08aeac744c4",
   "projectname": "JHelper",
-  "libVersion": "2.11.3",
+  "libVersion": "2.12.2",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
