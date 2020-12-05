@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index",
-    "wall/index"
+    "wall/index",
+    "wall/pages/post_success"
   ],
   "sitemapLocation": "sitemap.json",
   "window": {
