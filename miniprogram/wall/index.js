@@ -24,6 +24,12 @@ const navItems = [
 ]
 
 CustomPage({
+  onLoad(params) {
+    if ('page' in params) this.setData({
+      navActive: params.page,
+    })
+  },
+
   data: {
     navItems,
     navActive: 'wall',

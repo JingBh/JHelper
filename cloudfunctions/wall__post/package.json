@@ -1,9 +1,13 @@
 {
-  "name": "login",
+  "name": "wall__post",
   "version": "0.1.0",
   "private": true,
   "main": "index.js",
   "dependencies": {
+    "luxon": "^1.25.0",
     "wx-server-sdk": "^2.3.2"
+  },
+  "devDependencies": {
+    "@types/luxon": "^1.25.0"
   }
 }

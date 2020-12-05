@@ -1,0 +1,20 @@
+<view wx:if="{{ show }}" bindtap="onClose" class="weui-mask {{ !show ? 'weui-mask_hidden' : '' }}"/>
+<view wx:if="{{ show }}" bindtap="onClose" class="weui-dialog__wrp">
+  <view class="weui-dialog" catchtap="stopEvent">
+    <view class="weui-dialog__hd">
+      <view class="weui-dialog__title">需要授权</view>
+    </view>
+    <view class="weui-dialog__bd">
+      <text>此操作需要获得更多权限才能完成，是否授权并继续？</text>
+    </view>
+    <view class="weui-dialog__ft">
+      <view class="weui-dialog__btn weui-dialog__btn_default"
+            hover-class="weui-active" bindtap="onClose">取消
+      </view>
+      <button class="weui-dialog__btn weui-dialog__btn_primary"
+              hover-class="weui-active" open-type="getUserInfo"
+              bindtap="onClose">继续授权
+      </button>
+    </view>
+  </view>
+</view>

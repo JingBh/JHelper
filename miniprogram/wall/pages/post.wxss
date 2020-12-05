@@ -1,3 +1,7 @@
 .weui-form {
   padding-top: 0;
 }
+
+.text-error {
+  color: var(--weui-RED);
+}

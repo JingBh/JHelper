@@ -3,12 +3,13 @@
     <view class="weui-form__control-area">
       <mp-cells title="我要写一条：">
         <mp-cell>
-          <textarea class="weui-textarea" placeholder="请输入你的表白~" rows="3" bindinput="onInput"/>
-          <view class="weui-textarea-counter">
-            <text>{{ textCount }}</text>/200
+          <textarea class="weui-textarea" placeholder="请输入你的表白~" rows="3"
+                    value="{{ text }}" maxlength="{{ 500 }}" bindinput="onInput"/>
+          <view class="weui-textarea-counter {{ textCount > 300 ? 'text-error' : '' }}">
+            <text>{{ textCount }}</text>/300
           </view>
           <label class="weui-agree">
-            <checkbox class="weui-agree__checkbox-check"/>
+            <checkbox class="weui-agree__checkbox-check" model:checked="{{ anonymous }}"/>
             <text class="weui-agree__checkbox"></text>
             <text class="weui-agree__text">匿名发布</text>
           </label>
@@ -16,11 +17,24 @@
       </mp-cells>
     </view>
     <view class="weui-form__opr-area">
-      <button class="weui-btn weui-btn_primary">提交</button>
+      <button class="weui-btn weui-btn_primary" bindtap="onSubmit">提交</button>
     </view>
   </view>
   <mp-dialog show="{{ error }}" title="错误" buttons="{{ dialogButtons }}"
+             mask="{{ true }}" maskClosable="{{ true }}"
              bindclose="back" bindbuttontap="back">
     <text>{{ errorText }}</text>
   </mp-dialog>
+  <mp-dialog show="{{ hint }}" title="提示" buttons="{{ dialogButtons }}"
+             mask="{{ true }}" maskClosable="{{ true }}"
+             bindbuttontap="closeHint">
+    <text>{{ hintText }}</text>
+  </mp-dialog>
+  <mp-dialog show="{{ submitHint }}" title="提示" buttons="{{ submitDialogButtons }}"
+             mask="{{ true }}" maskClosable="{{ true }}"
+             bindbuttontap="closeSubmitHint">
+    <text>确定要提交吗？提交后将无法修改内容和匿名状态（但可以自行删除）。</text>
+    <text>请勿发布无意义信息、垃圾信息、灌水信息或违规信息等，一经发现将被删除。</text>
+  </mp-dialog>
+  <auth-dialog model:show="{{ authDialog }}"/>
 </block>

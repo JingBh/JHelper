@@ -1,0 +1,5 @@
+.weui-dialog__btn {
+  background-color: var(--weui-BG-2);
+  line-height: inherit;
+  padding: 0;
+}
