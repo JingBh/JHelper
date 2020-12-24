@@ -1,6 +1,8 @@
 {
   "pages": [
-    "pages/index", "pages/wall/index"
+    "pages/index",
+    "bdsub/index",
+    "bdsub/add"
   ],
   "sitemapLocation": "sitemap.json",
   "window": {

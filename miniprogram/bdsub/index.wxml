@@ -1,0 +1,17 @@
+<view class="page" data-weui-theme="{{ theme }}">
+  <view class="page__hd">
+    <view class="page__title">生日订阅</view>
+    <view class="page__desc">这些是你已经订阅的内容，左滑可以移除。</view>
+  </view>
+  <view class="page__bd">
+    <mp-cells>
+      <mp-slideview buttons="{{ slideButtons }}"
+                    bindbuttontap="slideButtonTap">
+        <mp-cell value="G191512" footer="学生"/>
+      </mp-slideview>
+    </mp-cells>
+    <mp-cells class="weui-cells">
+      <mp-cell link url="/bdsub/add" value="点击添加更多"/>
+    </mp-cells>
+  </view>
+</view>

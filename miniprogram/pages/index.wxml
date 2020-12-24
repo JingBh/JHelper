@@ -7,16 +7,22 @@
   <view class="page__bd page__bd_spacing">
     <view class="weui-article__h2">这里有什么：</view>
     <mp-cells>
-      <mp-cell>
+      <!--<mp-cell>
         <view class="weui-media-box__title">个人主页</view>
         <view class="weui-media-box__desc">
           // TODO: 用小程序写个个人主页？
         </view>
-      </mp-cell>
-      <mp-cell link hover url="wall/index">
+      </mp-cell>-->
+      <!--<mp-cell link hover url="/wall/index">
         <view class="weui-media-box__title">表白墙</view>
         <view class="weui-media-box__desc">
           没人觉得用朋友圈做太 nt 了吗...
+        </view>
+      </mp-cell>-->
+      <mp-cell link hover url="/bdsub/index">
+        <view class="weui-media-box__title">生日订阅</view>
+        <view class="weui-media-box__desc">
+          帮你记住同学们的生日
         </view>
       </mp-cell>
     </mp-cells>

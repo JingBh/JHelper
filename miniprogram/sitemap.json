@@ -3,6 +3,10 @@
   "rules": [
     {
       "action": "allow",
+      "page": "pages/index"
+    },
+    {
+      "action": "disallow",
       "page": "*"
     }
   ]

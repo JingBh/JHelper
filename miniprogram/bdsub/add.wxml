@@ -1,0 +1,28 @@
+<view class="page" data-weui-theme="{{ theme }}">
+  <view class="weui-form">
+    <view class="weui-form__text-area">
+      <view class="weui-form__title">添加生日订阅</view>
+      <view class="weui-form__desc">输入班号 (G19xx) 来订阅班中所有人的生日，或输入学号 (G19xxxx) 来订阅此人的生日。数据不全，请见谅。</view>
+    </view>
+    <view class="weui-form__control-area">
+      <view class="weui-cells__group weui-cells__group_form">
+        <view class="weui-cells weui-cells_form">
+          <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__bd">
+              <input class="weui-input"
+                     placeholder="请输入班号或学号"
+                     placeholder-class="weui-input__placeholder"
+                     focus="true" maxlength="{{ 7 }}"
+                     bindinput="onInput"/>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-form__opr-area">
+      <view class="weui-btn weui-btn_primary"
+            bindtap="submit">确定提交
+      </view>
+    </view>
+  </view>
+</view>
