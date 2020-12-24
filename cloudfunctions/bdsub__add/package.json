@@ -1,0 +1,9 @@
+{
+  "name": "bdsub__add",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "latest"
+  }
+}

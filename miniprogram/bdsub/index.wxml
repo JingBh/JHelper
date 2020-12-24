@@ -5,9 +5,11 @@
   </view>
   <view class="page__bd">
     <mp-cells>
-      <mp-slideview buttons="{{ slideButtons }}"
+      <mp-slideview wx:for="{{ subs }}" wx:for-item="sub" wx:key="_id"
+                    buttons="{{ slideButtons }}"
                     bindbuttontap="slideButtonTap">
-        <mp-cell value="G191512" footer="学生"/>
+        <mp-cell value="{{ sub.target }}"
+                 footer="{{ sub.type }}"/>
       </mp-slideview>
     </mp-cells>
     <mp-cells class="weui-cells">
