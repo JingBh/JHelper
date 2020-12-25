@@ -13,7 +13,7 @@
       </mp-slideview>
     </mp-cells>
     <mp-cells class="weui-cells">
-      <mp-cell link url="/bdsub/add" value="点击添加更多"/>
+      <mp-cell link value="点击添加更多" bindtap="add"/>
     </mp-cells>
   </view>
 </view>

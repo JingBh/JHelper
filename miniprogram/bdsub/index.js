@@ -33,6 +33,23 @@ CustomPage({
     })
   },
 
+  add() {
+    const tmplId = 'U-koI36cH2TSHstruz7dTV9bfhF7j4I6mZQ7NMTY9aE'
+    wx.requestSubscribeMessage({
+      tmplIds: [tmplId],
+      success: (res) => {
+        if (res[tmplId] === 'accept') {
+          wx.navigateTo({
+            url: '/bdsub/add',
+          })
+        }
+      },
+      fail(res) {
+        console.error(res)
+      },
+    })
+  },
+
   onShow() {
     this.update()
   },
